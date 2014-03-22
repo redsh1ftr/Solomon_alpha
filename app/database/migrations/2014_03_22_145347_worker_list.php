@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 
-class MedicalProblems extends Migration {
+class WorkerList extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -11,12 +11,7 @@ class MedicalProblems extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('medical_problems', function($table){
-			$table->increments('id');
-			$table->string('location');
-			$table->string('problem');
-			$table->timestamps();
-	});
+		//
 	}
 
 	/**

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Precise</title>
+	<title>Placeholder</title>
 	<style>
 		@import url(//fonts.googleapis.com/css?family=Lato:700);
 
@@ -50,12 +50,6 @@
 	</style>
 </head>
 <body>
-	<table style="width:400px", BORDER="0">
-	<th>{{link_to_route('clienthub', 'Client Hub')}}</th>
-	<th>{{link_to_route('marketinghub', 'Marketing Hub')}}</th>
-	<th>{{link_to_route('servicehub', 'Services')}}</th><tr>
-	<th>{{link_to_route('workerhub', 'Worker')}}</th>
-</table><br>
 		@yield('content')
 	</div>
 </body>

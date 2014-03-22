@@ -1,6 +1,6 @@
 <?php
 
-class WorkerController extends BaseController {
+class LoginController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,8 +17,17 @@ class WorkerController extends BaseController {
 
 	public $restful = true;
 
-	public function workerprofile() {
-		return View::make('worker.worker',  array('pagetitle', 'Client Hub'));
+	public function login() {
+		return View::make('worker.worker',  array('pagetitle', 'Worker Hub'));
+	}
+
+	public function create_worker_login() {
+	Login::create(array(
+		'username' => Input::get('username'),
+		'password' => Input::hash('password'),
+		));
+	return Redirect::route('');
+
 	}
 
 }

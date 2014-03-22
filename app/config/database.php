@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => '127.0.0.1',
-			'database'  => 'precise_dev',
-			'username'  => 'root',
-			'password'  => '',
+			'host'      => 'precisedev.db.12206660.hostedresource.com',
+			'database'  => 'precisedev',
+			'username'  => 'precisedev',
+			'password'  => 'LOL!@#lol123',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

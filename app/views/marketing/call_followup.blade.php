@@ -9,35 +9,18 @@
 {{ $call_list->city }} {{ $call_list->zip }}<br>
 {{ $call_list->phone }}<br>
 {{ $call_list->created_at }}<br><br>
-{{ $call_list->id	}}<br>
+
 Notes:<br>
 {{ $call_list->call_notes }}
 
 @endforeach
 <br><br><br>
-
-Followup Calls:<br>
-@if ($followup1)
-
-	@foreach($followup1 as $followup)
-		{{$followup->created_at }}<br>
-
-		{{$followup->notes}}<br><br>
-	@endforeach
-
-@endif
-
-
-
+Followup Calls:
 <br>
 
 <TABLE  BORDER="0"> <TH COLSPAN="2">
-
 {{ Form::open(array('route' => 'logfollowupnotes', 'POST')) }}
-
-{{ Form::hidden('call_id', $call_list->id) }}
-
-<tr><th>Add more Notes:</th><th>{{ Form::textarea('notes') }}</th></tr>
+<tr><th>Add more Notes:</th><th>{{ Form::textarea('call_notes') }}</th></tr>
 
   </table>
 

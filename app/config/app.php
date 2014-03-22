@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://precise-beta/',
+	'url' => 'http://www.solomonplumbing.net',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'TEW56gweWE%$YHwefbeokr$GWEdokt3n',
 
 	/*
 	|--------------------------------------------------------------------------

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 
-class CreateWorkOrderIndex extends Migration {
+class LoginWorker extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -11,11 +11,12 @@ class CreateWorkOrderIndex extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('work_order_index', function($table){
+			Schema::create('login_list', function($table){
 			$table->increments('id');
-			$table->integer('client_id');
-			$table->integer('work_order_id');
+			$table->string('username');
+			$table->string('password');
 			$table->timestamps();
+
 		});
 	}
 
@@ -26,7 +27,7 @@ class CreateWorkOrderIndex extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('work_order_index');
+		Schema::drop('login_list');
 	}
 
 }
